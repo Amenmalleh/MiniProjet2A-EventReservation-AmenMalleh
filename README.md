@@ -1,7 +1,5 @@
 # EventReserve - Application Web de Gestion de Reservations d'Evenements
 
-A full-featured event reservation management system built with **Symfony 7**, featuring JWT authentication, WebAuthn/Passkeys support, and a complete admin dashboard.
-
 ## Features
 
 ### User Side
@@ -30,21 +28,7 @@ A full-featured event reservation management system built with **Symfony 7**, fe
 
 ---
 
-## Technology Stack
 
-| Layer       | Technology                        |
-|-------------|-----------------------------------|
-| Framework   | Symfony 7.4                       |
-| Language    | PHP 8.2                           |
-| Database    | PostgreSQL 15                     |
-| ORM         | Doctrine ORM 3                    |
-| Auth        | LexikJWTAuthenticationBundle 3.x  |
-| Passkeys    | WebAuthn (custom service)         |
-| Templates   | Twig 3 + Bootstrap 5              |
-| Web Server  | Nginx (Alpine)                    |
-| Container   | Docker / Docker Compose           |
-
----
 
 ## Project Structure
 
