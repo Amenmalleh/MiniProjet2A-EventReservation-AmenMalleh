@@ -1,33 +1,13 @@
 <?php
 
-// This file is auto-generated and is for apps only. Bundles SHOULD NOT rely on its content.
+
 
 namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
 use Symfony\Component\Config\Loader\ParamConfigurator as Param;
 
 /**
- * This class provides array-shapes for configuring the services and bundles of an application.
- *
- * Services declared with the config() method below are autowired and autoconfigured by default.
- *
- * This is for apps only. Bundles SHOULD NOT use it.
- *
- * Example:
- *
- *     ```php
- *     // config/services.php
- *     namespace Symfony\Component\DependencyInjection\Loader\Configurator;
- *
- *     return App::config([
- *         'services' => [
- *             'App\\' => [
- *                 'resource' => '../src/',
- *             ],
- *         ],
- *     ]);
- *     ```
- *
+
  * @psalm-type ImportsConfig = list<string|array{
  *     resource: string,
  *     type?: string|null,

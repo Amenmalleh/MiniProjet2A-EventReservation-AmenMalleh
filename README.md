@@ -77,21 +77,6 @@ event-reservation/
 
 ---
 
-## Installation
-
-### Prerequisites
-- Docker & Docker Compose v2 (`docker compose` plugin, not `docker-compose`)
-- Git
-
-### With Docker (Recommended)
-
-> **Important:** The project has two compose files (`compose.yaml` and `docker-compose.yml`). Always use `-f docker-compose.yml` explicitly, otherwise Docker picks the wrong file.
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/abenabde2705/MiniProjet-EventReservation.git
-cd MiniProjet-EventReservation
-```
 
 2. **Start Docker services**
 ```bash
@@ -160,23 +145,6 @@ symfony serve
 php -S localhost:8080 -t public/
 ```
 
----
-
-## Environment Variables
-
-Copy `.env.example` to `.env.local` and configure:
-
-| Variable              | Description                            | Example                                    |
-|-----------------------|----------------------------------------|--------------------------------------------|
-| `APP_ENV`             | Application environment                | `dev` / `prod`                             |
-| `APP_SECRET`          | Symfony app secret (32+ chars)         | `a_random_secure_string`                   |
-| `DATABASE_URL`        | PostgreSQL connection URL              | `postgresql://user:pass@db:5432/event_db`  |
-| `JWT_SECRET_KEY`      | Path to JWT private key                | `%kernel.project_dir%/config/jwt/private.pem` |
-| `JWT_PUBLIC_KEY`      | Path to JWT public key                 | `%kernel.project_dir%/config/jwt/public.pem`  |
-| `JWT_PASSPHRASE`      | JWT key passphrase                     | `your_secure_passphrase`                   |
-| `APP_RP_ID`           | WebAuthn Relying Party ID              | `localhost`                                |
-| `APP_RP_NAME`         | WebAuthn Relying Party Name            | `EventReserve`                             |
-| `CORS_ALLOW_ORIGIN`   | CORS allowed origins (regex)           | `^https?://(localhost)(:[0-9]+)?$`         |
 
 ---
 
@@ -194,21 +162,4 @@ Copy `.env.example` to `.env.local` and configure:
 
 ---
 
-## Git Branch Strategy
 
-| Branch                  | Purpose                           |
-|-------------------------|-----------------------------------|
-| `main`                  | Stable production-ready code      |
-| `dev`                   | Integration branch                |
-| `feature/auth`          | Authentication features           |
-| `feature/events`        | Event management features         |
-| `feature/reservations`  | Reservation system features       |
-| `feature/admin`         | Admin dashboard features          |
-| `feature/docker`        | Docker configuration              |
-| `feature/jwt-passkeys`  | JWT + WebAuthn/Passkeys           |
-
----
-
-## License
-
-MIT License. See [LICENSE](LICENSE) for details.
